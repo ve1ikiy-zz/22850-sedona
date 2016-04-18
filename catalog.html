@@ -5,6 +5,69 @@
     <title>Гостиницы и аппартаменты в Седоне</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="container-fluid">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/index.html">
+          <img class="logo-menu" src="img/logo-menu.png" width="50" height="40" alt="Седона" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="section-fluid pick-hotels">
+        <form class="" action="catalog.html" method="get">
+          <div class="block-left">
+            <h2 class="title-pick-hotels">Инфраструктура:</h2>
+            <input id="pool-field" type="checkbox" name="pool" checked>
+            <label for="pool-field">Бассейн</label>
+            <input id="parking-field" type="checkbox" name="parking">
+            <label for="parking-field">Парковка</label>
+            <input id="wifi-field" type="checkbox" name="wifi">
+            <label for="wifi-field">wi-fi</label>
+          </div>
+          <div class="block-middle">
+            <h2 class="title-pick-hotels">Тип жилья:</h2>
+            <input id="hotel-field" type="checkbox" name="hotel" checked>
+            <label for="hotel-field">Гостинница</label>
+            <input id="motel-field" type="checkbox" name="motel" checked>
+            <label for="motel-field">Мотель</label>
+            <input id="apartments-field" type="checkbox" name="apartments" checked>
+            <label for="apartments-field">Апартаменты</label>
+          </div>
+          <div class="block-right">
 
+          </div>
+        </form>
+
+      </section>
+    </main>
+    <footer class="index-footer">
+      <div class="block-left">
+        <b class="twitter-hesh">#VISITSEDONA</b>
+      </div>
+      <div class="block-middle">
+        <a class="social-btn social-btn-vk" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-inst" href="#"></a>
+      </div>
+      <div class="block-right">
+        <a href="https://htmlacademy.ru"><img src="img/academy-copyright.png" width="200" height="35" alt="Разработано в HTML Academy" /></a>
+      </div>
+    </footer>
   </body>
 </html>
