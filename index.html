@@ -7,53 +7,51 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container-fluid">
+      <div class="container-fluid clearfix">
         <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
+          <div class="menu-left">
+            <a href="#">Информация</a>
+            <a href="#">Фото и видео</a>
+          </div>
+          <div class="menu-logo">
+            <a href="/index.html">
+              <img class="logo-menu" src="img/top-menu-logo.png" width="69" height="55" alt="Седона" />
+            </a>
+          </div>
+          <div class="menu-right">
+            <a href="#">Карта штата</a>
+            <a href="#">Гостиницы</a>
+          </div>
         </nav>
-        <a href="/index.html">
-          <img class="logo-menu" src="img/top-menu-logo.png" width="69" height="55" alt="Седона" />
-        </a>
       </div>
     </header>
-    <main class="container-fluid">
+    <main class="container-fluid clearfix">
       <div class="intro-welcome">
         <img src="img/index-intro-welcome-gorgeous.png" width="283" height="99" alt="Добро пожаловать" />
         <img src="img/index-intro-sedona.svg" width="500" height="100" alt="в Седону." />
         <img src="img/index-intro-canyon-sucks.svg" width="335" height="100" alt="Рады вас видеть." />
       </div>
-      <section class="reason-fluid block-blue">
-        <header>
-          <h1 class="title-reason">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="title-descr">
-            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-          </p>
-        </header>
-        <div class="first-fact">
-          <div class="fact block-left">
+      <div class="">
+        <h1 class="title-reason">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="title-descr">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+        </p>
+      </div>
+        <div class="img-accomplishments clearfix">
+          <div class="fact-text">
             <b class="fact-title">Настоящий городок</b>
-            <span class="fact-number">- №1 -</span>
             <p>
+              - №1 - <br>
               Седона – не атракцион для туристов, там течет своя жизнь
             </p>
-            <img class="img-block img-fluid img-right" src="img/index-content-first-fact.jpg" height="255" alt="Кафе в городе" />
+          </div>
+          <div class="fact-img">
+            <img src="img/index-content-first-fact.jpg" height="256" alt="Кафе в городе" />
           </div>
         </div>
-      </section>
-      <section class="reason-fluid">
+        <div class="">
+
+        </div>
         <div class="fact block-left">
           <img src="img/index-content-home.svg" width="78" height="75" alt="Мотель" />
           <b class="fact-title">Жилье</b>
@@ -75,7 +73,6 @@
             Не только китайского, но и местного производства!
           </p>
         </div>
-      </section>
       <section class="reason-fluid block-blue">
         <img class="img-block img-fluid img-left" src="img/index-content-second-fact.jpg" height="255" alt="Вид на ущелье" />
         <div class="fact block-right">
