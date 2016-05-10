@@ -2,35 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/symbols-sedona.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>Гостиницы и аппартаменты в Седоне</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container-fluid">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="/index.html">
-          <img class="logo-menu" src="img/top-menu-logo.png" width="69" height="55" alt="Седона" />
+    <header class="container-fluid clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <a class="logo-menu" href="index.html">
+          <img src="img/top-menu-logo.png" width="138"  height="70" alt="Седона" />
         </a>
-      </div>
+      </nav>
     </header>
-    <main>
-      <section class="section-fluid pick-hotels">
+    <main class="container-fluid">
+      <section class="hotels-intro pick-hotels clearfix">
         <form class="" action="catalog.html" method="get">
           <div class="block-left">
             <h2 class="title-pick-hotels">Инфраструктура:</h2>
@@ -41,7 +41,7 @@
             <input id="wifi-field" type="checkbox" name="wifi">
             <label for="wifi-field">wi-fi</label>
           </div>
-          <div class="block-middle">
+          <div class="block-left">
             <h2 class="title-pick-hotels">Тип жилья:</h2>
             <input id="hotel-field" type="checkbox" name="hotel" checked>
             <label for="hotel-field">Гостинница</label>
@@ -50,14 +50,41 @@
             <input id="apartments-field" type="checkbox" name="apartments" checked>
             <label for="apartments-field">Апартаменты</label>
           </div>
-          <div class="block-right">
-
+<!-- Фильтр из демо-->
+          <div class="filter-range block-left">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
+<!-- Конец фильтра из демо-->
         </form>
       </section>
-      <div class="fluid block-sort">
-
-      </div>
+      <section class="">
+        <div class="block-sort">
+          <h3>Найдено:3</h3>
+          <ul>
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <article class="fluid hotels-fluid">
         <div class="img-and-buttons">
           <div class="hotels-img">
@@ -113,18 +140,20 @@
         </div>
       </article>
     </main>
-    <footer class="index-footer container-fluid clearfix">
-      <div class="block-footer">
-        <span>#visitsedona</span>
-      </div>
-      <div class="block-footer social">
-        <a class="btn-social" href="#">Facebook <span class="icon-facebook"></span></a>
-        <a class="btn-social" href="#">Twitter <span class="icon-twitter"></span></a>
-        <a class="btn-social" href="#">Youtube <span class="icon-youtube"></span></a>
-      </div>
-      <div class="block-footer">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru"><img src="img/index-footer-academy.ong" width="113" height="39" alt="HTML Academy" /></a>
+    <footer class="index-footer container-fluid">
+      <div class="container-fluid clearfix">
+        <div class="block-footer">
+          <span class="hash">#visitsedona</span>
+        </div>
+        <div class="block-footer">
+          <a class="btn-social" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="btn-social" href="#">Twitter <span class="icon-twitter"></span></a>
+          <a class="btn-social" href="#">Youtube <span class="icon-youtube"></span></a>
+        </div>
+        <div class="block-footer">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru"><img src="img/index-footer-academy.png" width="113" height="39" alt="HTML Academy" /></a>
+        </div>
       </div>
     </footer>
   </body>
