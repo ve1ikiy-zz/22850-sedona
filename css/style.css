@@ -45,6 +45,7 @@ body{
   float: right;
   position: relative;
   margin-top: 30px;
+  text-align: right; 
 }
 .hotels-more {
   float:left;
@@ -103,10 +104,10 @@ body{
 }
 
 .stars {
-  display: block;
+  display: block
+  text-align: right;
 }
 .stars span {
-  text-align: right;
   color: #81b3d2;
 }
 .btn-rating {
