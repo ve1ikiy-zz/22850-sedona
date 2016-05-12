@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main class="container-fluid">
-      <section class="hotels-intro pick-hotels clearfix">
+      <section class="hotels-intro clearfix">
         <form class="" action="catalog.html" method="get">
           <div class="block-left">
             <h2 class="title-pick-hotels">Инфраструктура:</h2>
@@ -52,38 +52,54 @@
             <label for="apartments-field">Апартаменты</label>
           </div>
 <!-- Фильтр из демо-->
-          <div class="filter-range block-left">
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-            <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <div class="block-right">
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
           </div>
+
 <!-- Конец фильтра из демо-->
         </form>
       </section>
       <section class="hotels-fluid clearfix">
         <div class="block-sort">
-          <h3>Найдено:3</h3>
-          <ul>
-            <li>
-              <a href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По рейтингу</a>
-            </li>
-          </ul>
+          <div class="search-title">
+            <span>Найдено: 3</span>
+          </div>
+          <div class="list-sort">
+            <ul>
+              <li>
+                <span>Сортировка</span>
+              </li>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="arrow-sort">
+            <div class="arrow-sort-block">
+              <span class="icon-up-dir"></span>
+              <span class="icon-down-dir"></span>
+            </div>
+          </div>
         </div>
       </section>
       <article class="hotels-fluid">

@@ -18,6 +18,7 @@ body{
   border-bottom: 1px solid #e5e5e5;
 }
 
+
 .hotels-item {
   margin-left: 6%;
   margin-right: 6%;
@@ -45,7 +46,7 @@ body{
   float: right;
   position: relative;
   margin-top: 30px;
-  text-align: right; 
+  text-align: right;
 }
 .hotels-more {
   float:left;
@@ -275,18 +276,34 @@ body{
   background-color: #7f9ebe;
   background-image: url("../img/hotels-content-intro-background.jpg");
   background-size: 100% auto;
-  max-height: 217px;
+  min-height: 217px;
   position: relative;
   margin: 0;
 }
 
+.block-left {
+  margin-left: 6%;
+  margin-top: 27.5px;
+}
+
+.block-left h2 {
+  margin: 0;
+  padding: 0;
+}
 section .block-left {
   float: left;
-  max-height: 217px;
-  width: 33%;
+  min-height: 217px;
+  width: 180px;;
 }
 .block-left label {
   display: block;
+}
+
+.block-right {
+  float: right;
+  width: auto;
+  margin-right: 6%;
+  margin-top: 27.5px;
 }
 /*---------------------------------*/
 /*---------------------------------*/
@@ -294,8 +311,6 @@ section .block-left {
 /* Стилизация фильтра на странице поиска*/
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
-
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -432,28 +447,74 @@ section .block-left {
 /*---------------------------------*/
 /*---------------------------------*/
 .block-sort {
-  float: left;
-  width: 100%;
+  margin-left: 6%;
+  margin-right: 6%;
   min-height: 86px;
   background-color: #ffffff;
 }
-.block-sort ul {
+.search-title {
+  float: left;
+  margin-top: 28.5px;
+  margin-bottom: 33.5px;
+  margin-right: 3%;
+  width: 135px;
+}
+.search-title span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color:#000000;
+}
+.list-sort {
+  float: left;
+  width: 365px;
+}
+.arrow-sort {
+  float: right;
+  width: 100px;
+  margin-top: 28.5px;
+  text-align: right;
+  font-size: 23px;
+  line-height: 20px;
+}
+.arrow-sort-block {
+  display: block;
+}
+
+.arrow-sort-block span {
+  color: #81b3d2;
+
+}
+.list-sort ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-.block-sort ul li {
+.list-sort ul li {
   display: inline-block;
   text-align: left;
   font-size: 12px;
   line-height: 19px;
   vertical-align: top;
-  width: 10%;
+  padding-left: 20px;
   padding-top: 32px;
   padding-bottom: 36px;
+}
 
+.list-sort ul li:first-child {
+  padding-left: 0;
+  border-bottom-style: none;
+}
+
+.list-sort ul li a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+.list-sort ul li:last-child {
+  border-bottom-style: none;
 }
 /*---------------------------------*/
 /*---------------------------------*/
@@ -606,7 +667,7 @@ section .block-left {
 }
 .hash{
   display: block;
-  padding-top: 48px;
+  margin-top: 48px;
   color: #000000;
   font-size: 21px;
   line-height: 29px;
@@ -614,5 +675,5 @@ section .block-left {
 }
 .copyright {
   display: block;
-  padding-top: 48px;
+  margin-top: 48px;
 }
