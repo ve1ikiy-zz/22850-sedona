@@ -2,25 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>Седона – небольшой городок в Аризоне</title>
   </head>
   <body>
     <header class="container-fluid clearfix">
       <nav class="main-navigation">
-        <div class="menu-left">
-
-        </div>
-        <div class="menu-logo">
-
-        </div>
-        <div class="menu-right">
-
-        </div>
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <a class="logo-menu" href="index.html">
+          <img src="img/top-menu-logo.png" width="138"  height="70" alt="Седона" />
+        </a>
       </nav>
     </header>
-    <main>
-      <div class="intro container-fluid clearfix">
+    <main class="container-fluid">
+      <div class="intro">
         <div class="welcome">
           <img src="img/index-intro-welcome-gorgeous.png" width="256" height="86" alt="Добро пожаловать" />
         </div>
@@ -32,7 +43,7 @@
         </div>
       </div>
       <section class="index-description">
-        <h1 class="index-title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="index-title">Седона – небольшой городок в Аризоне, <br>заслуживающий большего!</h1>
         <p class="">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <div class="container-fluid clearfix">
@@ -44,7 +55,7 @@
           </p>
         </div>
         <div class="fact-img fact-right">
-          <img src="img/index-content-first-fact.jpg" height="256" alt="Кафе в городе" />
+          <img src="img/index-content-first-fact-big.png" height="256" alt="Кафе в городе" />
         </div>
       </div>
       <div class="container-fluid clearfix">
@@ -72,10 +83,10 @@
       </div>
       <div class="container-fluid clearfix">
         <div class="fact-img fact-left">
-          <img class="img-block img-fluid img-left" src="img/index-content-second-fact.jpg" height="256" alt="Вид на ущелье" />
+          <img class="img-block img-fluid img-left" src="img/index-content-second-fact-big.png" height="256" alt="Вид на ущелье" />
         </div>
         <div class="fact-blue fact-right">
-          <b class="fact-title">Там есть мост дьявола</b>
+          <b class="fact-title">Там есть <br>мост дьявола</b>
           <p>
             - №2 -<br>
             Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -111,31 +122,24 @@
           <p>
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="show-form" type="button" name="button"></button>
+          <button class="show-form" type="button" name="button">Поиск гостинницы в Седоне</button>
         </div>
         <div class="container-fluid">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2318727.7051978237!2d10.41236134111351!3d17.35303317250256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1460979227165" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </div>
       </section>
     </main>
-    <footer class="index-footer container-fluid clearfix">
-      <div class="block-footer">
-        <span>#visitsedona</span>
-      </div>
-      <div class="block-footer social">
-        <div class="btn-social">
-          <a href="#"><i class="icon-facebook"></i></a>
+    <footer class="index-footer container-fluid">
+        <div class="block-footer">
+          <span class="hash">#visitsedona</span>
         </div>
-        <div class="btn-social">
-          <a href="#"><i class="icon-twitter"></a>
+        <div class="block-footer">
+          <a class="btn-social" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="btn-social" href="#">Twitter <span class="icon-twitter"></span></a>
+          <a class="btn-social" href="#">Youtube <span class="icon-youtube"></span></a>
         </div>
-        <div class="btn-social">
-          <a href="#"><i class="icon-youtube"></i></a>
-        </div>
-      </div>
-      <div class="block-footer">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru"><img src="img/index-footer-academy.ong" width="113" height="39" alt="HTML Academy" /></a>
+        <div class="block-footer">
+          <span class="copyright">Website by</span>
       </div>
     </footer>
   </body>
