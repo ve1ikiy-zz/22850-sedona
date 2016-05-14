@@ -134,6 +134,23 @@ body {
   margin: 14px 0 0;
 }
 
+
+.fact-restorant {
+  background-color: #d8e5ef;
+  background-image: url("../img/index-content-first-fact.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.fact-canyon {
+  background-image: url("../img/index-content-second-fact.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
 .fact {
   background-color: #ffffff;
   text-align: center;
@@ -152,14 +169,12 @@ body {
   line-height: 21px;
   display: block;
   margin-top: 50px;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding: 0 20%;
 }
 
 .fact-grey p {
   font-size: 14px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding: 0 5%;
   word-wrap: break-word;
 }
 
@@ -170,7 +185,7 @@ body {
 
 .fact-right {
   float: right;
-  width: 33%;
+  width: 33.3333%;
   min-height: 256px;
 }
 
@@ -179,7 +194,7 @@ body {
   min-height: 256px;
   text-align: center;
   vertical-align: top;
-  color: #fff;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 
@@ -201,6 +216,7 @@ body {
 .fact-img {
   width: 67%;
   overflow: hidden;
+  min-height: 256px;
 }
 
 .fact-ico {
@@ -695,7 +711,7 @@ section .block-left {
 
 .hotels-footer {
   min-height: 120px;
-  background-color: rgba(254, 254, 254, 1);
+  background-color: rgb(254, 254, 254, 1);
 }
 
 .block-footer {
