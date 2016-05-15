@@ -351,7 +351,7 @@ body {
   position: absolute;
   top: -2px;
   left: 50%;
-  display: block;
+  display: none;
   width: 570px;
   height: 395px;
   transform: translate(-50%, 0);
@@ -418,7 +418,7 @@ body {
 }
 
 .form-calendar:hover::after {
-  color: #000;
+  color: #000000;
 }
 
 .form-calendar:active::after {
@@ -451,11 +451,12 @@ body {
   -moz-appearance: textfield;
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.booking-box-item-half::after {
+.count-box-plus::after {
   font-family: 'symbols-sedona';
   font-size: 14px;
   line-height: 38px;
@@ -470,15 +471,15 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: #c2c2c2;
 }
 
-.booking-box-item-half:hover::after {
-  color: #000;
+.count-box-plus:hover::after {
+  color: #000000;
 }
 
-.booking-box-item-half:active::after {
+.count-box-plus:active::after {
   color: #81b3d2;
 }
 
-.booking-box-item-half::before {
+.count-box-minus::before {
   font-family: 'symbols-sedona';
   font-size: 14px;
   line-height: 38px;
@@ -488,8 +489,17 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   width: 38px;
   height: 38px;
   content: '\e802';
+  cursor: pointer;
   text-align: center;
   color: #c2c2c2;
+}
+
+.count-box-minus:hover::before {
+  color: #000000;
+}
+
+.count-box-minus:active::before {
+  color: #81b3d2;
 }
 
 .btn-find {
