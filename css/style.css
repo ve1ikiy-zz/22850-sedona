@@ -351,7 +351,7 @@ body {
   position: absolute;
   top: -2px;
   left: 50%;
-  display: none;
+  display: block;
   width: 570px;
   height: 395px;
   transform: translate(-50%, 0);
