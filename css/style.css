@@ -745,17 +745,131 @@ section .block-left {
 /* Стилизация футера*/
 
 .map-box {
+  position: relative;
   width: 100%;
-  min-height: 473px;
+  min-height: 593px;
   background-color: #ccdeac;
   background-image: url("../img/index-map.jpg");
   background-position: center;
   overflow-x: hidden;
 }
 
+.booking-box {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left:50%;
+  transform: translate(-50%,0);
+  width: 570px;
+  height: 395px;
+  background-color: #ffffff;
+}
+
+.booking-form {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 45px;
+  margin-right: 55px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.booking-box-item {
+  display: block;
+  width: 465px;
+  height: 38px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.booking-box-item label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -4px;
+  margin-right: 18px;
+}
+
+.booking-box-item input[type="text"] {
+  display: inline-block;
+  position: relative;
+  margin-left: -4px;
+  background-color: #f2f2f2;
+  width: 291px;
+  border: 0;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+.booking-box-item input[type="text"]::after {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 38px;
+  height: 38px;
+  background-color: black;
+  content: "\e800";
+  font-family: "symbols-sedona";
+}
+
+.booking-box-item-half {
+  display: inline-block;
+}
+
+.booking-box-item-half:last-child {
+  margin-left: 54px;
+
+}
+
+.booking-box-item-half input[type="number"] {
+  display: inline-block;
+  width: 38px;
+  height: 100%;
+  background-color: #f2f2f2;
+  border: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 38px;
+  padding-right: 38px;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+.btn-find {
+  display: block;
+  text-align: center;
+  width: 458px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #81b3d2;
+  margin-top: 54px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: inherit;
+}
+
 .index-footer {
+  position: relative;
+  margin-top: -120px;
   min-height: 120px;
-  background-color: rgba(254, 254, 254, 0.3);
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .hotels-footer {

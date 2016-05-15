@@ -106,6 +106,29 @@
           <button class="btn-show-form" type="button" name="button">Поиск гостинницы в Седоне</button>
         </div>
         <div class="map-box">
+          <div class="booking-box">
+            <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="booking-box-item">
+                <label for="date-in">Дата заезда:</label>
+                <input id="date-in" type="text" name="field-date-in">
+              </div>
+              <div class="booking-box-item">
+                <label for="date-out">Дата выезда:</label>
+                <input id="date-out" type="text" name="field-date-out">
+              </div>
+              <div class="booking-box-item">
+                <div class="booking-box-item-half">
+                  <label for="adult-count">Взрослые:</label>
+                  <input id="adult-count" type="number" name="field-adult-count">
+                </div>
+                <div class="booking-box-item-half">
+                  <label for="child-count">Дети:</label>
+                  <input id="child-count" type="number" name="field-child-count">
+                </div>
+              </div>
+              <input class="btn-find" type="submit" role="button" name="btn-find" value="Найти">
+            </form>
+          </div>
         </div>
       </section>
     </main>
