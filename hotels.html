@@ -21,7 +21,7 @@
           <li>
             <a href="#">Карта штата</a>
           </li>
-          <li>
+          <li class="current-page">
             <a href="#">Гостиницы</a>
           </li>
         </ul>
@@ -83,7 +83,7 @@
               <li>
                 <span>Сортировка</span>
               </li>
-              <li>
+              <li class="active-sort">
                 <a href="#">По цене</a>
               </li>
               <li>
@@ -96,8 +96,8 @@
           </div>
           <div class="arrow-sort">
             <div class="arrow-sort-block">
-              <a class="icon-up-dir" href="#"></a>
-              <a class="icon-down-dir" href="#"></a>
+              <a href="#"><span class="icon-up-dir"></span></a>
+              <a class="arrow-sort-active" href="#"><span class="icon-down-dir"></span></a>
             </div>
           </div>
         </div>
@@ -192,7 +192,10 @@
           <a class="btn-social" href="#">Youtube <span class="icon-youtube"></span></a>
         </div>
         <div class="block-footer">
-          <span class="copyright">Website by</span>
+          <div class="copyright-block">
+            <span class="copyright">Website by</span>
+            <a class="copyright btn-copyright btn-copyright-img" href=""></a>
+          </div>
       </div>
     </footer>
   </body>
