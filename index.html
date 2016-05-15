@@ -109,21 +109,27 @@
           <div class="booking-box">
             <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="booking-box-item">
-                <label for="date-in">Дата заезда:</label>
-                <input id="date-in" type="text" name="field-date-in">
+                  <label for="date-in">Дата заезда:</label>
+                  <input id="date-in" type="text" name="field-date-in">
+                  <span class="form-calendar"></span>
               </div>
               <div class="booking-box-item">
-                <label for="date-out">Дата выезда:</label>
-                <input id="date-out" type="text" name="field-date-out">
+                  <label for="date-out">Дата выезда:</label>
+                  <input id="date-out" type="text" name="field-date-out">
+                  <span class="form-calendar"></span>
               </div>
               <div class="booking-box-item">
                 <div class="booking-box-item-half">
                   <label for="adult-count">Взрослые:</label>
-                  <input id="adult-count" type="number" name="field-adult-count">
+                  <span class="count-box"></span>
+                  <input class="" id="adult-count" type="number" name="field-adult-count">
+                  <span class="count-box"></span>
                 </div>
                 <div class="booking-box-item-half">
                   <label for="child-count">Дети:</label>
+                  <span class="count-box"></span>
                   <input id="child-count" type="number" name="field-child-count">
+                  <span class="count-box"></span>
                 </div>
               </div>
               <input class="btn-find" type="submit" role="button" name="btn-find" value="Найти">
