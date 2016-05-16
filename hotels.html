@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <title>Гостиницы и аппартаменты в Седоне</title>
   </head>
@@ -31,9 +31,9 @@
       </nav>
     </header>
     <main class="container-fluid">
-      <section class="hotels-intro clearfix">
-        <form class="" action="catalog.html" method="get">
-          <div class="block-left">
+      <section class="hotels-intro">
+        <form class="hotels-form clearfix" action="catalog.html" method="get">
+          <div class="hotels-form-box-left">
             <h2 class="title-pick-hotels">Инфраструктура:</h2>
             <input id="pool-field" type="checkbox" name="pool" checked>
             <label for="pool-field">Бассейн</label>
@@ -42,7 +42,7 @@
             <input id="wifi-field" type="checkbox" name="wifi">
             <label for="wifi-field">wi-fi</label>
           </div>
-          <div class="block-left">
+          <div class="hotels-form-box-left">
             <h2 class="title-pick-hotels">Тип жилья:</h2>
             <input id="hotel-field" type="checkbox" name="hotel" checked>
             <label for="hotel-field">Гостинница</label>
@@ -51,8 +51,7 @@
             <input id="apartments-field" type="checkbox" name="apartments" checked>
             <label for="apartments-field">Апартаменты</label>
           </div>
-<!-- Фильтр из демо-->
-          <div class="block-right">
+          <div class="hotels-form-box-right">
             <div class="filter-range">
               <div class="filter-range-title">Стоимость в сутки (р):</div>
               <div class="price-controls">
@@ -69,8 +68,6 @@
               <button class="btn-transparent" type="submit">Показать</button>
             </div>
           </div>
-
-<!-- Конец фильтра из демо-->
         </form>
       </section>
       <section class="hotels-fluid clearfix">
