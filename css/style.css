@@ -3,7 +3,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: -1px;
   text-transform: uppercase;
   color: #000;
   background-color: #f2f2f2;
@@ -63,7 +62,6 @@ body {
 .main-navigation li:nth-child(3) {
   margin-left: 8%;
   text-align: right;
-  letter-spacing: 0;
 }
 
 .main-navigation ul a {
@@ -152,7 +150,6 @@ body {
   margin: 0;
   padding-top: 58px;
   text-align: center;
-  letter-spacing: -2px;
   word-spacing: 2px;
 }
 
@@ -160,7 +157,6 @@ body {
   margin: 0;
   margin-top: 25px;
   text-align: center;
-  letter-spacing: -1px;
   word-spacing: 3px;
 }
 
@@ -198,7 +194,6 @@ body {
   display: block;
   margin-top: 48px;
   padding: 0 20%;
-  letter-spacing: -2px;
 }
 
 .fact-number-grey {
@@ -242,14 +237,12 @@ body {
 .hate-pixel-perfect-p1 {
   margin: 0;
   padding: 0 12%;
-  letter-spacing: -1px;
   word-spacing: 3px;
 }
 
 .hate-pixel-perfect-p2 {
   margin: 0;
   padding: 0 9%;
-  letter-spacing: -1px;
   word-spacing: 3px;
 }
 
@@ -314,7 +307,6 @@ body {
   display: block;
   margin-top: 26px;
   margin-bottom: 23px;
-  letter-spacing: -1px;
 }
 
 .fact p {
@@ -322,7 +314,6 @@ body {
   line-height: 21px;
   margin: 0;
   padding: 0 14%;
-  letter-spacing: -1px;
   word-spacing: 2px;
 }
 
@@ -346,7 +337,6 @@ body {
   display: block;
   margin-bottom: 31px;
   padding-top: 56px;
-  letter-spacing: -3px;
 }
 
 .block-action p {
@@ -369,8 +359,7 @@ body {
   height: 86px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  letter-spacing: -2px;
-     text-transform: uppercase;
+  text-transform: uppercase;
   color: #fff;
   border: 0;
   background-color: #766357;
@@ -431,7 +420,6 @@ body {
   margin-left: -4px;
   text-align: center;
   vertical-align: middle;
-  letter-spacing: -1px;
 }
 
 .booking-box-item input[type='text'] {
@@ -560,7 +548,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin: 0 auto;
   margin-top: 54px;
   text-align: center;
-  letter-spacing: -1px;
   text-transform: inherit;
   color: #fff;
   border: 0;
@@ -808,7 +795,6 @@ input[type='checkbox']:checked + label::before {
   padding-left: 36px;
   text-align: left;
   vertical-align: top;
-  letter-spacing: -1px;
   word-spacing: 3px;
 }
 
@@ -913,7 +899,6 @@ article {
   margin-top: 25px;
   margin-bottom: 10px;
   padding: 0;
-  letter-spacing: -2px;
   word-spacing: 2px;
 }
 
@@ -1065,7 +1050,6 @@ article {
   line-height: 29px;
   display: block;
   margin-top: 36px;
-  letter-spacing: -1px;
   color: #000;
 }
 
@@ -1077,7 +1061,6 @@ article {
 .copyright-block span {
   padding-right: 14px;
   padding-left: 12px;
-  letter-spacing: -1px;
 }
 
 .copyright {
