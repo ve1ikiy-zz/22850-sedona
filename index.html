@@ -2,11 +2,158 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Седона – небольшой городок в Аризоне</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="container-fluid clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+        <a class="logo-menu" href="index.html">
+          <img src="img/top-menu-logo.png" width="138"  height="70" alt="Седона" />
+        </a>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="intro">
+        <div class="welcome">
+          <img src="img/index-intro-welcome-gorgeous.png" width="256" height="86" alt="Добро пожаловать" />
+        </div>
+        <div class="sedona">
+          <img src="img/index-intro-sedona.png" width="458" height="78" alt="в наш гостеприимный край" />
+        </div>
+        <div class="canyon">
+          <img src="img/index-intro-canyon-sucks.png" width="297" height="73" alt="Рады вас видеть." />
+        </div>
+      </div>
+      <section class="index-description">
+        <h1 class="index-title">СЕДОНА — небольшой городок в АРИЗОНЕ,<br>зАСЛУЖИвающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <div class="container-fluid clearfix">
+        <div class="fact-blue fact-left">
+          <b>Настоящий <br>городок</b>
+          <span class="fact-number">- №1 -</span>
+          <p class="hate-pixel-perfect-p1">Седона – не атракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="fact-img fact-right fact-restorant">
+          <span class=""></span>
+        </div>
+      </div>
+      <div class="container-fluid clearfix">
+        <div class="fact fact-left">
+          <span class="fact-ico-home fact-ico"></span>
+          <b class="fact-title">Жилье</b>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="fact fact-left">
+          <span class="fact-ico fact-ico-burger"></span>
+          <b class="fact-title">Еда</b>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="fact fact-left">
+          <span class="fact-ico-gift fact-ico"></span>
+          <b class="fact-title">Сувениры</b>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+      </div>
+      <div class="container-fluid clearfix">
+        <div class="fact-img fact-left fact-canyon">
+        </div>
+        <div class="fact-blue fact-right">
+          <b>Там есть <br>мост дьявола</b>
+          <span class="fact-number">- №2 -</span>
+          <p class="hate-pixel-perfect-p2">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </div>
+      <div class="container-fluid clearfix">
+        <div class="fact-grey fact-left">
+          <b class="fact-title">Небольшая <br>площадь</b>
+          <span class="fact-number-grey">- №3 -</span>
+          <p class="hate-pixel-perfect-p3">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="fact-grey fact-left">
+          <b class="fact-title">Красивая <br>дорога</b>
+          <span class="fact-number-grey">- №4 -</span>
+          <p class="normal-p">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="fact-grey fact-left">
+          <b class="fact-title">Мало <br>туристов</b>
+          <span class="fact-number-grey">- №5 -</span>
+          <p class="normal-p">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </div>
+      <section>
+        <div class="block-action">
+          <b class="action-title">Заинтересовались?</b>
+          <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="btn-show-form form-open" type="button" name="button" onclick="toggle();">Поиск гостиницы в Седоне</button>
+        </div>
+        <div class="map-box">
+          <div class="booking-box">
+            <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="booking-box-item">
+                  <label for="date-in">Дата заезда:</label>
+                  <input id="date-in" type="text" name="field-date-in" required>
+                  <span class="form-calendar"></span>
+              </div>
+              <div class="booking-box-item">
+                  <label for="date-out">Дата выезда:</label>
+                  <input id="date-out" type="text" name="field-date-out" required>
+                  <span class="form-calendar"></span>
+              </div>
+              <div class="booking-box-item">
+                <div class="booking-box-item-half">
+                  <label for="adult-count">Взрослые:</label>
+                  <span class="count-box-minus"></span>
+                  <input id="adult-count" type="number" name="field-adult-count" required>
+                  <span class="count-box-plus"></span>
+                </div>
+                <div class="booking-box-item-half">
+                  <label for="child-count">Дети:</label>
+                  <span class="count-box-minus"></span>
+                  <input id="child-count" type="number" name="field-child-count" required>
+                  <span class="count-box-plus"></span>
+                </div>
+              </div>
+              <input class="btn-find" type="submit" role="button" name="btn-find" value="Найти">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="index-footer container-fluid">
+        <div class="block-footer">
+          <span class="hash">#visitsedona</span>
+        </div>
+        <div class="block-footer">
+          <a class="btn-social" href="#">Facebook <span class="icon-twitter"></span></a>
+          <a class="btn-social" href="#">Twitter <span class="icon-facebook"></span></a>
+          <a class="btn-social" href="#">Youtube <span class="icon-youtube"></span></a>
+        </div>
+        <div class="block-footer">
+          <div class="copyright-block">
+            <span class="copyright">Website by</span>
+            <a class="copyright btn-copyright btn-copyright-img" href="http://htmlacademy.ru"></a>
+          </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
